@@ -1,7 +1,13 @@
+//Bootstrap is a framework used to easily implement styling
+//and some functionality like forms, buttons, ect.
+//It's seen widespread adoption, and has some unique syntax you'll want to learn.
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+//Order of import matters. This order of Bootstrap first, then our index.css after, allows us to override 
+//Bootstrap styling if needed.
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
