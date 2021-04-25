@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import ChildComponent from './ChildComponent';
+import './ParentComponent.css';
 
 class ParentComponent extends Component {
     constructor(props) {
@@ -12,11 +13,16 @@ class ParentComponent extends Component {
 
     render() {
         return(
+            <>
             <div className="child-wrapper">
               {this.state.map(child => (
                   <ChildComponent dataFromParent = {child.data} key = {child.id}></ChildComponent>
               ))}
             </div>
+            <div>
+                <button class="btn btn-primary shadow p-3 mb-5 rounded navi">Placeholder for second page navigation</button>
+            </div>
+            </>
         )}
 }
 
