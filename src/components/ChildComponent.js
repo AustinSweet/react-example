@@ -13,14 +13,13 @@ class ChildComponent extends Component {
         const {data} = this.state;
         return(            
             <div className="child-body">
-                <div id="child-title">I'm an entire component!</div>
-                <p>
-                {data}
-                </p>
+                <div id="child-title">I'm a child component</div>
+                    <p>
+                        {data}
+                    </p>
             </div>
         )
     }
-
 }
 
 export default ChildComponent;

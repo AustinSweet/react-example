@@ -7,14 +7,18 @@ class App extends Component {
   render() {
     return(
       <>
-    <div className="App">
-      <Navbar dark color="secondary">
-      <div className="container">
-        <NavbarBrand href="/">React Example</NavbarBrand>
-      </div>
-      </Navbar>
-    </div>
-      <ParentComponent></ParentComponent>
+        <div className="App">
+          <Navbar dark color="secondary">
+            <div className="container">
+              <NavbarBrand href="/">
+                I'm a Navbar. I'm set up so you can click me to go back to the "/" route's page
+              </NavbarBrand>
+            </div>
+          </Navbar>
+        </div>
+        <div>
+          <ParentComponent></ParentComponent>
+        </div>
       </>
     );
   }
