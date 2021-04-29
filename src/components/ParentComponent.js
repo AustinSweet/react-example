@@ -8,10 +8,13 @@ class ParentComponent extends Component {
         this.state = [
             { id: 1, data: "This data is stored in the state." ,}, 
             { id: 2, data: "React is pretty copacetic." ,},
-            { id: 3, data: "Mapping is a pretty essential tool.", }
+            { id: 3, data: "Mapping is a pretty essential tool.",},
+            { id: 4, data: "Sharing data isn't super easy in React."},
+            { id: 5, data: "But the advantages outweigh the cost!"}
+
            ]
     }
-
+    
     render() {
         return(
             <>
@@ -32,7 +35,8 @@ class ParentComponent extends Component {
                     </div>
                 </div>
             </>
-        )}
+        )
+    }
 }
 
 
